@@ -855,7 +855,7 @@ int Delete(int type,struct ext2_inode *current,char *name)
             {
                 if(delete_inode.i_blocks==0)
                     break;
-                Delete_block(delete_inode.i_block[i]);
+                Delete_block(delete_inode.i_block[j]);
                 delete_inode.i_blocks--;
             }
             //删除一级索引中的数据块
